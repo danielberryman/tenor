@@ -751,7 +751,7 @@
                 poster.style.backgroundImage = `url(https://i.ytimg.com/vi/${v.id}/hqdefault.jpg)`;
                 poster.addEventListener('click', () => {
                     const iframe = document.createElement('iframe');
-                    iframe.src = `https://www.youtube-nocookie.com/embed/${v.id}?autoplay=1&start=${v.start || 0}&rel=0`;
+                    iframe.src = `https://www.youtube.com/embed/${v.id}?autoplay=1&start=${v.start || 0}&rel=0&playsinline=1&origin=${encodeURIComponent(location.origin)}`;
                     iframe.title = v.title;
                     iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
                     iframe.referrerPolicy = 'strict-origin-when-cross-origin';
