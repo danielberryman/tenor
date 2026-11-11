@@ -90,9 +90,14 @@
 
         .nav-links a:hover { color: var(--ivory); }
 
+        /* The link to the voice site: always in the accent color. */
+        .nav-links a.sister { color: var(--gold); }
+
         @media (max-width: 640px) {
             .nav-brand { display: none; }
             .nav { justify-content: center; }
+            .nav-links { flex-wrap: wrap; justify-content: center; gap: 0.5rem 1rem; }
+            .nav-links a { letter-spacing: 0.2em; font-size: 0.66rem; }
         }
 
         /* ---------- Hero ---------- */
@@ -599,6 +604,7 @@
             <li><a href="#ball">Opera Ball</a></li>
             <li><a href="#credits">Credits</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a class="sister" href="https://voice.danielberryman.com">Teaching ↗</a></li>
         </ul>
     </nav>
 
@@ -733,7 +739,8 @@
         </div>
     </section>
 
-    <footer>© <span id="yr"></span> Daniel Berryman · Tenor · New York</footer>
+    <footer>© <span id="yr"></span> Daniel Berryman · Tenor · New York<br /><a href="https://voice.danielberryman.com"
+            style="color: var(--gold); text-decoration: none; line-height: 2.4;">Voice lessons ↗</a></footer>
 
     <script>
         // Add or edit videos here. Leave id empty for a "coming soon" slot.
